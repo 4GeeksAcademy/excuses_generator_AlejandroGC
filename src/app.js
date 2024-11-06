@@ -12,13 +12,13 @@ function searchExcuse() {
     "while I was praying."
   ];
 
-  let who_index = Math.floor(Math.random() * who.length);
-  let action_index = Math.floor(Math.random() * action.length);
-  let what_index = Math.floor(Math.random() * what.length);
-  let when_index = Math.floor(Math.random() * when.length);
+  let whoIndex = Math.floor(Math.random() * who.length);
+  let actionIndex = Math.floor(Math.random() * action.length);
+  let whatIndex = Math.floor(Math.random() * what.length);
+  let whenIndex = Math.floor(Math.random() * when.length);
 
   document.getElementById("excuse").innerHTML =
-    who[who_index] + action[action_index] + what[what_index] + when[when_index];
+    who[whoIndex] + action[actionIndex] + what[whatIndex] + when[whenIndex];
 }
 
 document.body.onload = searchExcuse;
